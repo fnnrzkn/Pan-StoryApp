@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:menuCategory="container">
+        <item android:id="@+id/language_feature"
+            android:title="@string/language_feature"
+            android:icon="@drawable/ic_language_logo"
+            app:showAsAction="always" />
+        <item android:id="@+id/logout_feature"
+            android:title="@string/logout_feature"
+            android:icon="@drawable/ic_logout_logo"
+            app:showAsAction="always" />
+        <item android:id="@+id/map_feature"
+            android:title="@string/google_map_feature"
+            android:icon="@drawable/ic_google_map_logo"
+            app:showAsAction="always" />
+        <item android:id="@+id/add_feature"
+            android:title="@string/add_feature"
+            android:icon="@drawable/ic_add_logo"
+            app:showAsAction="always" />
+    </group>
+</menu>

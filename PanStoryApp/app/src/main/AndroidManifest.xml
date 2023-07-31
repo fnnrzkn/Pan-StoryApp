@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PanStoryApp"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBJm9nfyvdmwHDPGIAwwYjOSEUB-6hFDfQ" />
+        <activity
+            android:name=".appuserinterface.appactivity.mapactivity.AppMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appuserinterface.appactivity.AppCameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appuserinterface.appactivity.AppAddStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appuserinterface.appactivity.AppRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appuserinterface.appactivity.AppLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appuserinterface.appactivity.AppDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appuserinterface.appactivity.AppMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".appuserinterface.appactivity.AppSplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
